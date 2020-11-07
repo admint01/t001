@@ -9,18 +9,18 @@ header{
     height: 100px;
     width: 100%;
     background-image: linear-gradient(to left,#7ebdb4,#862a5c);
+    display: block;
 }
 header a{
     color: black;
 }
 #box_logo_id{
-    width: 25%;
-    height: 89%;
+    width: 30%;
+    height: 68%;
     float: right;
     background-color: rgb(255, 255, 255);
     margin: 6px 6px;
-    text-align: center;
-
+    padding: 10px;
 }
 #logo_name_id{
     float: left;
@@ -42,22 +42,22 @@ header a{
 }
 nav{
     width: 70%;
-    text-align: center;
     font-weight: bold;
     font-size: 140%;
+    text-align: center;
 }
 nav a{
     text-decoration: none;
     color: white;
 }
-nav li{
+.myconts{
+    width: 180px;
+    margin: 0px;
     display: inline-block;
     line-height: 100px;
-    width: 200px;
-    border-radius: 100px;
-    text-align: center;
+    border-radius: 70px;
 }
-nav li:hover{
+.myconts:hover{
     background-color: white;
     color: black;
     animation: shake-bottom 2s;
@@ -82,9 +82,8 @@ aside{
 }
 #img_aside_id{
     width: 70%;
-    line-height: 570px;
     margin-top: 10%;
-    border: 3px double black;
+    border: 10px double black;
     animation:jello-horizontal 2s ;
 
 }
@@ -92,7 +91,6 @@ aside{
     font-size: 150%;
     color: black;
     padding: 5px 0px;
-    border-bottom: 3px solid white;
 }
 #article1_id{
     width: 72%;
@@ -118,13 +116,13 @@ aside{
 #box h1{
     border-bottom: 7px solid hsl(171, 32%, 62%);
     padding: 15px 0px;
-    font-size: 35px;
+    font-size: xx-large;
     font-family: 'Changa', sans-serif;
 /* font-family: 'Kufam', cursive; */
 }
 #box p{
     font-family: 'Changa', sans-serif;
-    font-size: 35px;
+    font-size: 170%;
 }
 #thanks{
     font-size: 5px;
@@ -137,4 +135,90 @@ aside{
     left: 50%;
     top: 82%;
     transform: translate(-50%,0%);
+}
+#icon_box{
+    width: 100%;
+    display:flex;
+    background-image: linear-gradient(to right,#7ebdb4,#862a5c);
+}
+#icon_box2{
+    width: 30%;
+    background-color: white;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+#icon_box img{
+    width: 45px;
+    margin: 30px 10px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    /* margin: auto; */
+}
+#icon_box img:hover{
+    animation: vibrate-1 0.5s infinite;
+    }
+
+    @-webkit-keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}80%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}@keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}80%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}
+@media only screen and (max-width:920px){
+*{text-decoration: none;}
+header,main{
+    height: auto;
+}
+#box_logo_id{
+    width: 100%;
+    height: 300px;
+    display: block;
+    float: none;
+    text-align: center;
+    margin: 25px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+
+}
+#logo_img_id{
+    height: 85%;
+}
+#logo_name_id{
+    float: none;
+    line-height: normal;
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    height: 100px;
+}
+#article1_id{
+    width: 100%;
+    height: auto;
+    padding: 4% 0px;
+    float: none;
+    text-align: center;
+}
+#box{
+    width: 80%;
+    height: auto;
+    position:static ;
+    transform: none;
+    margin: auto;
+}
+#audio{
+    position:static ;
+    transform: none;
+    margin: auto;
+    margin-top: 4%;
+}
+aside{
+    width: 100%;
+    height: auto;
+    margin: 1% 0;
+
+}
+#img_aside_id{
+width: 50%;
+margin-top: 6%;
+}
+#icon_box2 {
+    width: 70%;
+}
 }
